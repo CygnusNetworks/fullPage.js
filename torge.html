@@ -20,23 +20,6 @@
 
 	<script type="text/javascript" src="jquery.fullPage.js"></script>
 
-    <style>
-#header {
-	position:fixed;
-	display:block;
-	width: 100%;
-	background: #333;
-	z-index:9;
-	text-align:center;
-	color: #f2f2f2;
-	}
-#header {
-	top:0px;
-	height: 50px;
-	padding: 20px 0 0 0;
-}
-    </style>
-
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
@@ -44,7 +27,7 @@
                 menu: true,
                 lockAnchors: false,
 				anchors: ['startseite', 'unternehmen', 'leistungen', 'referenzen', 'kontakt', 'impressum'],
-                navigation: true,
+                navigation: false,
                 navigationPosition: 'right',
                 // navigationTooltips: ['Start', 'Unternehmen', 'Leistungen', 'Referenzen', 'Kontakt', 'Impressum'],
                 showActiveTooltip: false,
@@ -102,78 +85,56 @@
 </head>
 
 <body>
-<div id="header">
-    <div class="menue_leiste">
-        <div class="menue_logo"></div>
-        <div class="menue_punkte" style="">
-            <table border="0" style="border-spacing: 25px;">
+<div id="header" class="menue_leiste">
+
+        <div class="menue_logo" onclick="$.fn.fullpage.moveTo('startseite')" style="position: absolute; width: 170px; height: 49px; margin-left: 19px;"></div>
+            <table class="menue_table">
                 <tr>
-                    <td><a href="#section0">Unternehmen</a></td>
+                    <td onclick="$.fn.fullpage.moveTo('unternehmen');">Unternehmen</td>
                     <td><img src="imgs/webelemente/_png/linie_menue.png"/></td>
-                    <td><a href="#section1">Leistungen</a></td>
+                    <td onclick="$.fn.fullpage.moveTo('leistungen');">Leistungen</td>
                     <td><img src="imgs/webelemente/_png/linie_menue.png"/></td>
-                    <td><a href="#section2">Referenzen</a></td>
+                    <td onclick="$.fn.fullpage.moveTo('referenzen');">Referenzen</td>
                     <td><img src="imgs/webelemente/_png/linie_menue.png"/></td>
-                    <td><a href="#section3">Kontakt</a></td>
+                    <td onclick="$.fn.fullpage.moveTo('kontakt');">Kontakt</td>
                     <td><img src="imgs/webelemente/_png/linie_menue.png"/></td>
-                    <td><a href="#section4">Impressum</a></td>
+                    <td onclick="$.fn.fullpage.moveTo('impressum');">Impressum</td>
 
                 </tr>
             </table>
         </div>
-    </div>
 </div>
+<div class="button_nachoben" onclick="$.fn.fullpage.moveTo('startseite')"><img src="imgs/webelemente/_png/button.png" /></div>
 <div id="fullpage">
-	<div class="section" id="section0">
-        <div class="logo"></div>
+	<div class="section section_gradient" id="section0" style="text-align:center;">
+        <img src="imgs/webelemente/_png/logo_startseite.png" width="305" height="147"/>
         <div class="scrollen_startseite" onclick="$.fn.fullpage.moveSectionDown();"></div>
 	</div>
 
-	<div class="section" id="section1">
-		<div class="bild_unternehmen"></div>
+    <!-- unternehmen //-->
+	<div class="section background_image_full" id="section1" style="background-image: url('imgs/fotos/aussicht_bonn.jpg');">
+        <div class="scrollen" onclick="$.fn.fullpage.moveSectionDown();"></div>
     </div>
-	<div class="section" id="section1">
 
-		<div class="unternehmen">
-			<div class="box_unternehmen">
-				<div class="schrift_hallo"></div>
-				<p>Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben
-				da sind und wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts,
-				Rafgenduks oder Handgloves, um Schriften zu testen. Manchmal Sätze, die
-				alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«.
-				Sehr bekannt ist dieser: The quick brown fox jumps over the lazy old dog. </b>
-				Oft werden in Typoblindtexte auch fremdsprachige Satzteile eingebaut (AVAIL®
-				and Wefox™ are testing aussi la Kerning), um die Wirkung in anderen Sprachen
-				zu testen. In Lateinisch sieht zum Beispiel fast jede Schrift gut aus. Quod
-				erat demonstrandum. Seit 1975 fehlen in den meisten Testtexten die Zahlen,
-				weswegen nach TypoGb. 204 § ab dem Jahr 2034 Zahlen in 86 der Texte zur
-				Pflicht werden.</p>
-			</div>
-			<div class="scrollen_unternehmen"></div>
-		</div>
+    <!-- leistungen //-->
+    <div class="section background_image_full" id="section2" style="background-image: url('imgs/fotos/buero4.jpg');">
+        <div class="scrollen" onclick="$.fn.fullpage.moveSectionDown();"></div>
+    </div>
 
+
+    <!-- referenzen //-->
+	<div class="section background_image_full" id="section3" style="background-image: url('imgs/fotos/gebaeude1.jpg');">
+        <div class="scrollen" onclick="$.fn.fullpage.moveSectionDown();"></div>
 	</div>
-	<div class="section" id="section2">
-	    <div class="slide" id="slide1">
-				<h1>Free scroll</h1>
-				<p>
-					User can still using the scroll bar and fullPage.js will do the rest!
-				</p>
-		</div>
 
-	    <div class="slide" id="slide3">
-			<h1>Slide 2</h1>
-		</div>
+    <!-- kontakt //-->
+	<div class="section background_image_full" id="section4" style="background-image: url('imgs/fotos/gebaeude4.jpg');">
+        <div class="scrollen" onclick="$.fn.fullpage.moveSectionDown();"></div>
+	</div>
 
-	</div>
-	<div class="section" id="section4">
-			<h1>Referenzen</h1>
-	</div>
+    <!-- impressum //-->
 	<div class="section" id="section5">
-			<h1>Kontakt</h1>
-	</div>
-	<div class="section" id="section6">
-			<h1>Impressum</h1>
+        <div style="background-image: url('imgs/webelemente/_png/logo_impressum.png'); position: absolute; bottom: 0px;width: 264px; height: 200px;"></div>
 	</div>
 </div>
 

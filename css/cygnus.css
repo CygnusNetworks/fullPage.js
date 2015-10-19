@@ -1,71 +1,44 @@
-/*--------------------------------------- MENÜLEISTE -----------------------------------------*/
+#header {
+	position:fixed;
+	display:block;
+	width: 100%;
+	background: #243776;
+	z-index:9;
+	text-align:center;
+	top:0;
+	height: 70px;
+	padding: 20px 0 0 0;
+}
+
+.section_gradient {
+	background: linear-gradient(#243776 10%, rgba(0, 0, 0, 0) 20%)
+}
+
+.background_image_full {
+	background: no-repeat center;
+	background-size: 100% auto;
+}
 
 .menue_leiste {
 	position: fixed;
-	right: 0px;
-	left: 0px;
-	top: 0px;
+	right: 0;
+	left: 0;
+	top: 0;
 	height: 120px;
-	/* background-image: url(../imgs/webelemente/_png/menueleiste.png); */
 	}
 
 .menue_logo {
 	position: absolute;
 	width: 170px;
 	height: 49px;
-	margin: 19px;
+	margin-left: 19px;
 	background-image: url(../imgs/webelemente/_png/logo_menue.png);
 	}
-
-.menue_punkte {
-	position: absolute;
-	top: 28px;
-	right: 44px;
-	width: 614px;
-	height: 32px;
-	}
-
-/*.menue_unternehmen {*/
-	/*width: 93px;*/
-	/*height: 10px;*/
-	/*top: 5px;*/
-	/*margin-right: 26px;*/
-	/*}*/
-
-/*.menue_leistungen {*/
-	/*width: 76px;*/
-	/*height: 10px;*/
-	/*margin-bottom: 10px;*/
-	/*margin-left: 26px;*/
-	/*margin-right: 26px;*/
-	/*}*/
-
-/*.menue_referenzen {*/
-	/*width: 83px;*/
-	/*height: 10px;*/
-	/*margin-bottom: 10px;*/
-	/*margin-left: 25px;*/
-	/*margin-right: 25px;*/
-	/*}*/
-
-/*.menue_kontakt {*/
-	/*width: 58px;*/
-	/*height: 10px;*/
-	/*margin-bottom: 10px;*/
-	/*margin-left: 25px;*/
-	/*margin-right: 25px;*/
-	/*}*/
-
-/*.menue_impressum {*/
-	/*width: 80px;*/
-	/*height: 10px;*/
-	/*margin-bottom: 10px;*/
-	/*margin-left: 25px;*/
-	/*}*/
 
 .button_nachoben {
 	position: fixed;
 	bottom: 10px;
+	z-index: 9;
 	right: 10px;
  	}
 
@@ -74,46 +47,27 @@
 
 .logo {
 	background-image: url(../imgs/webelemente/_png/logo_startseite.png);
-	width: 304px;
-	height: 146px;
 	margin: auto;
-	margin-top: 280px;
 	}
 
 .scrollen_startseite {
 	background-image: url(../imgs/webelemente/_png/scrollen_startseite.png);
 	width: 96px;
 	height: 64px;
-	margin: auto;
-	margin-top: 190px;
-	margin-bottom: 64px;
+	position: absolute;
+	bottom: 10px;
+	margin-left: 50%;
 	}
 
-/*-------------------------------------- UNTERNEHMEN ---------------------------------------*/
-
-.bild_unternehmen {
-	background: url(../imgs/fotos/aussicht_bonn.jpg);
-	/*background-repeat: no-repeat;*/
-	background-color: #5fa6ff;
-	height: 656px;
-	top: 744px;
-	right: 0px;
-	left: 0px;
+.scrollen {
+	background-image: url(../imgs/webelemente/_png/scrollen_unternehmen.png);
+	width: 18px;
+	height: 30px;
+	position: absolute;
+	bottom: 10px;
+	margin-left: 50%;
 	}
 
-.unternehmen {
-	background-color: #5fa6ff;
-	height: 784px;
-	top: 1400px;
-	right: 0px;
-	left: 0px;
-	}
-
-.box_unternehmen {
-	height: 272px;
-	width: 304px;
-	margin: auto;
-	}
 
 .schrift_hallo {
 	background: url(../imgs/webelemente/_png/schrift_hallo.png);
@@ -121,147 +75,24 @@
 	width: 60px;
 	}
 
-.scrollen_unternehmen {
-	background-image: url(../imgs/webelemente/_png/scrollen_unternehmen.png);
-	width: 18px;
-	height: 30px;
-	margin: auto;
-	top: 690px;
-	}
 
-/*--------------------------------------- LEISTUNGEN ---------------------------------------*/
-
-.bild_leistungen {
-	background: url(../imgs/fotos/buero4.jpg);
-	/*background-repeat: no-repeat;*/
-	background-color: #c7c7c7;
-	height: 656px;
-	top: 2184px;
-	right: 0px;
-	left: 0px;
-	}
-
-.leistungen {
-	background-color: #c7c7c7;
-	height: 464px;
-	top: 2840px;
-	right: 0px;
-	left: 0px;
-	}
-
-.box_leistungen {
-	height: 256px;
-	width: 784px;
-	margin: auto;
-	}
-
-.box_leistungen_klein {
-	background-color: #c2c2c2;
-	height: 256px;
-	width: 144px;
-	margin-right: 16px;
-	}
-
-.icon_leistungen {
-	background-color: #fff;
-	height: 96px;
-	width: 96px;
-	margin: auto;
-	margin-bottom: 64px;
-	}
-
-.scrollen_leistungen {
-	background-image: url(../imgs/webelemente/_png/scrollen_leistungen.png);
-	width: 18px;
-	height: 30px;
-	margin: auto;
-	top: 370px;
-	}
-
-/* --------------------------------------- REFERENZEN --------------------------------------- */
-
-.bild_referenzen {
-	background: url(../imgs/fotos/gebaeude1.jpg);
-	/*background-repeat: no-repeat;*/
-	background-color: #244083;
-	height: 656px;
-	top: 3304px;
-	right: 0px;
-	left: 0px;
-	}
-
-.referenzen {
-	background-color: #244083;
-	height: 624px;
-	top: 3960px;
-	right: 0px;
-	left: 0px;
-	}
-
-.scrollen_referenzen {
-	background-image: url(../imgs/webelemente/_png/scrollen_referenzen.png);
-	width: 18px;
-	height: 30px;
-	margin: auto;
-	top: 530px;
-	}
-
-/*---------------------------------------- KONTAKT ---------------------------------------*/
-
-.bild_kontakt {
-	background: url(../imgs/fotos/gebaeude4.jpg);
-	/*background-repeat: no-repeat;*/
-	background-color: #000;
-	height: 656px;
-	top: 4584px;
-	right: 0px;
-	left: 0px;
-	}
-
-.kontakt {
-	background-color: #c7c7c7;
-	height: 624px;
-	top: 5240px;
-	right: 0px;
-	left: 0px;
-	}
-
-.scrollen_kontakt {
-	background-image: url(../imgs/webelemente/_png/scrollen_kontakt.png);
-	width: 18px;
-	height: 30px;
-	margin: auto;
-	top: 530px;
-	}
-
-/*--------------------------------------- IMPRESSUM ---------------------------------------*/
-
-.impressum {
-	background-color: #fff;
-	height: 1048px;
-	top: 5864px;
-	right: 0px;
-	left: 0px;
-	}
-
-.logo_impressum {
-	background-image: url(../imgs/webelemente/_png/logo_impressum.png);
-	width: 264px;
-	height: 200px;
-	bottom: 0px;
-	}
-
-/*----------------------------------------- FONTS ------------------------------------------*/
 
 a {
 	text-decoration:none;
 	}
 
-div.menue_punkte a {
+.menue_table {
+	border-spacing: 35px;
+	top: -15px;
+	right:20px;
+	position: absolute;
 	font: 12px/16px bitstream_vera_sansbold, Arial, Helvetica, sans-serif;
 	color: #60a6fc;
-	text-align: center;
-	}
+}
+.menue_table a {
+	color: #60a6fc;
+
+}
 
 h1 {
 	font: 12px/16px bitstream_vera_sansbold, Arial, Helvetica, sans-serif;
