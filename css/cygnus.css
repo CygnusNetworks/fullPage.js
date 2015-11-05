@@ -1,0 +1,119 @@
+#header {
+	position:fixed;
+	display:block;
+	width: 100%;
+	background: #243776;
+	z-index:9;
+	text-align:center;
+	top:0;
+	height: 70px;
+	padding: 20px 0 0 0;
+}
+
+.section_gradient {
+	background: linear-gradient(#243776 10%, rgba(0, 0, 0, 0) 20%)
+}
+
+.background_image_full {
+	background: no-repeat center;
+	background-size: 100% auto;
+}
+
+.menue_leiste {
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	height: 120px;
+	}
+
+.menue_logo {
+	position: absolute;
+	width: 170px;
+	height: 49px;
+	margin-left: 19px;
+	background-image: url(../imgs/webelemente/_png/logo_menue.png);
+	}
+
+.button_nachoben {
+	position: fixed;
+	bottom: 10px;
+	z-index: 9;
+	right: 10px;
+ 	}
+
+/*--------------------------------------- STARTSEITE ---------------------------------------*/
+
+
+.logo {
+	background-image: url(../imgs/webelemente/_png/logo_startseite.png);
+	margin: auto;
+	}
+
+.scrollen_startseite {
+	background-image: url(../imgs/webelemente/_png/scrollen_startseite.png);
+	width: 96px;
+	height: 64px;
+	position: absolute;
+	bottom: 10px;
+	margin-left: 50%;
+	}
+
+.scrollen {
+	background-image: url(../imgs/webelemente/_png/scrollen_unternehmen.png);
+	width: 18px;
+	height: 30px;
+	position: absolute;
+	bottom: 10px;
+	margin-left: 50%;
+	}
+
+
+.schrift_hallo {
+	background: url(../imgs/webelemente/_png/schrift_hallo.png);
+	height: 28px;
+	width: 60px;
+	}
+
+
+
+a {
+	text-decoration:none;
+	}
+
+.menue_table {
+	border-spacing: 35px;
+	top: -15px;
+	right:20px;
+	position: absolute;
+	font: 12px/16px bitstream_vera_sansbold, Arial, Helvetica, sans-serif;
+	color: #60a6fc;
+}
+.menue_table a {
+	color: #60a6fc;
+
+}
+
+h1 {
+	font: 12px/16px bitstream_vera_sansbold, Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-align: center;
+	}
+
+h2 {
+	font: 12px/16px bitstream_vera_sansbold, Arial, Helvetica, sans-serif;
+	color: #5fa6ff;
+	text-align: center;
+	}
+
+h3 {
+	font: 12px/16px bitstream_vera_sansbold, Arial, Helvetica, sans-serif;
+	color: #c7c7c7;
+	text-align: center;
+	}
+
+p {
+	font: 10px/16px bitstream_vera_sansroman, Arial, Helvetica, sans-serif;
+	color: #000;
+	text-align: left;
+	}
