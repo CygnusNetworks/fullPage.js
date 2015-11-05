@@ -4,14 +4,15 @@ Test
 
 ![preview](https://raw.github.com/alvarotrigo/fullPage.js/master/examples/imgs/intro.png)
 ![compatibility](https://raw.github.com/alvarotrigo/fullPage.js/master/examples/imgs/compatible.gif)
-![fullPage.js version](http://img.shields.io/badge/fullPage.js-v2.7.3-brightgreen.svg)
+![fullPage.js version](http://img.shields.io/badge/fullPage.js-v2.7.4-brightgreen.svg)
 [![License](http://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 7Kb gziped!
 
 A simple and easy to use plugin to create fullscreen scrolling websites (also known as single page websites or onepage sites).
 It allows the creation of fullscreen scrolling websites, as well as adding some landscape sliders inside the sections of the site.
 
-- [Live demo](http://alvarotrigo.com/fullPage/) - [Apple demo](http://alvarotrigo.com/fullPage/examples/apple.html)
+- [Live demo](http://alvarotrigo.com/fullPage/)
+- [Wordpress theme](https://goo.gl/HuFudq)
 - [Blog Article](http://alvarotrigo.com/blog/fullpage-jquery-plugin-for-fullscreen-scrolling-websites/)
 - [Frequently Answered Questions](https://github.com/alvarotrigo/fullPage.js/wiki/FAQ---Frequently-Answered-Questions)
 
@@ -30,6 +31,7 @@ Would you like to have a website using fullpage.js functionality but you don't k
 - [Lazy loading](https://github.com/alvarotrigo/fullPage.js#lazy-loading)
 - [Creating smaller sections](https://github.com/alvarotrigo/fullPage.js#creating-smaller-sections)
 - [Callbacks](https://github.com/alvarotrigo/fullPage.js#callbacks)
+- [Build tasks](https://github.com/alvarotrigo/fullPage.js#build-tasks)
 - [Resources](https://github.com/alvarotrigo/fullPage.js#resources)
 - [Who is using fullpage.js](https://github.com/alvarotrigo/fullPage.js#who-is-using-fullpagejs)
 
@@ -686,7 +688,41 @@ Example:
 ####Cancelling a move before it takes place
 You can cancel a move by returning `false` on the `onSlideLeave` callback. Same as with `onLeave`.
 
+#Build tasks
+This gives the ability to compile the SCSS file to CSS as well compress and generate source-maps for the CSS and JS files.
+
+##Installing dependencies
+You must have `node` amd `npm` installed in order to run the compile and compress tasks.
+
+Terminal:
+```
+// (Optional) Install Gulp module globally
+npm install gulp -g
+
+// Install fullpage's build dependencies
+npm install
+```
+
+##Task commands
+
+Terminal:
+```
+// Only compile the SCSS
+gulp scss
+
+// Only compress the CSS
+gulp css
+
+// Only compress the JS
+gulp js
+
+// Runs all three tasks
+gulp
+```
+
+
 #Resources
+- [Wordpress theme](https://goo.gl/HuFudq)
 - [CSS Easing Animation Tool - Matthew Lein](http://matthewlein.com/ceaser/) (useful to define the `easingcss3` value)
 - [fullPage.js jsDelivr CDN](http://www.jsdelivr.com/#!jquery.fullpage)
 - [fullPage.js plugin for October CMS](http://octobercms.com/plugin/freestream-parallax)
@@ -696,9 +732,11 @@ You can cancel a move by returning `false` on the `onSlideLeave` callback. Same 
 ## Who is using fullPage.js
 If you want your page to be listed here. Please <a href="mailto:alvaro@alvarotrigo.com">contact me</a> with the URL.
 
+[![Google](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/google.png)](http://www.yourprimer.com/)
 [![Sony](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/sony.gif)](http://www.sony-asia.com/microsite/mdr-10/)
 ![Vodafone](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/vodafone.png)
 [![British Airways](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/british-airways-fullpage.gif)](http://www.britishairways.com/en-gb/information/travel-classes/experience-our-cabins)
+[![EA](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/ea.png)](http://www.battlefield.com/)
 [![Mi](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/mi.png)](http://www.mi.com/shouhuan)
 [![scribe](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/scribe.png)](http://usescribe.com/)
 [![matrimonia](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/matrimonia.png)](http://www.matrimonia.rs/)
@@ -717,24 +755,17 @@ If you want your page to be listed here. Please <a href="mailto:alvaro@alvarotri
 - http://www.mi.com/shouhuan
 - https://moneytree.jp/
 - http://torchbrowser.com/
-- http://leafcutter.com.au/
 - http://thekorner.fr/
-- http://ymcadc.org/AnnualReport/
 - http://www.restaurantwoods.nl/
 - http://urban-walks.com/
 - http://lingualeo.com/
-- http://www.getikto.com/
 - http://charlotteaimes.com/
 - http://collection.madeofsundays.com
 - http://thiswasmybest.com/
-- http://jacoberiksson.se/
 - http://www.boxreload.com/
-- https://cloudmagic.com/
-- http://www.dividendsolar.com/
 - http://www.thespecialists.be
 - http://brianingle.webflow.com/
 - http://lawinenstift.com/
-- http://wtfdesign.pl/
 - http://www.swenk.me/
 - http://duis.co/
 - http://educationaboveall.org/
@@ -744,49 +775,38 @@ If you want your page to be listed here. Please <a href="mailto:alvaro@alvarotri
 - http://wantnova.com/
 - http://usescribe.com/
 - http://lucilecazanave.com/
-- http://overallstudio.co.il/
 - http://boxx.hk/
 - http://medlive.com
 - http://bearonunicycle.com/
 - http://rawmilk.dk/en/
-- http://www.nearpod.com/
 - http://www.famavolat.com/
-- http://www.carpetloverclub.net/
+- http://www.carpetloverclub.com/
 - http://www.sanyang.com.tw/service/Conception/
 - http://www.batzaya.net/
 - http://www.graphicid.dk/
-- http://hed.citinet.pro/
 - http://www.jukstapoz.com/
 - http://portfolio.io.utwente.nl/student/dijkavan/
-- http://www.omqcomics.com/
 - http://www.carlphot.com/
 - http://medissix.com/
 - http://trasmissione-energia.terna.it/
 - http://www.thefoodmovie.com/
 - http://www.villareginateodolinda.it
 - http://www.kesstrio.com
-- http://willontheway.com/
 - http://www.karmaffne.com/
 - http://fossdistillery.is
 - http://www.conversionculture.com/
 - http://ded-morozz.kiev.ua/
 - http://www.fergalkeenan.com
-- http://spell-star.appspot.com/
 - http://yizeng.me/
 - http://neolearning.eu/
 - http://unabridgedsoftware.com/
 - http://wc2014.plnwrx.com/
 - http://organice.io/
-- http://alchemy-research.com/
-- http://www.cima-ecuador.com/
 - http://atlanticcorp.us/
 - http://moysport.ru/
-- http://www.norttilaakso.fi/
 - http://wcfixtures.co.uk/
 - http://www.dopehustleinc.com/default.php
 - http://themify.me/demo/#theme=fullpane
-- http://bragdonfarm.com/
-- http://www.paperdeermusic.com/
 - http://dancingroad.com
 - http://www.camanihome.com/
 - http://www.exapoint.ch/
